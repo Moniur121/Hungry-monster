@@ -4,7 +4,6 @@ function getMealList(){
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
     .then(res=> res.json())
     .then(data=> {
-
          let html="";
          if(data.meals){
              data.meals.forEach(meal => {
@@ -30,7 +29,6 @@ function getMealList(){
     });
 }
 function displayRecipeItems(event){
-    console.log(event);
     const url=`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${event}`
     fetch(url)
     .then(res=> res.json())
@@ -52,7 +50,6 @@ function displayRecipeItems(event){
          </div>
        </div>
         `
-        console.log(data.meals[0])
          document.getElementById('meal-details').innerHTML=displayInfo;
     })
 }

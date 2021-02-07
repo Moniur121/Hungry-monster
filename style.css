@@ -14,9 +14,8 @@
  }
  .meal-item{
      margin: 20px;
-     box-shadow: 5px 5px 10px gray;
      overflow: hidden;
-    display: grid;
+     display: grid;
      margin: 2rem 0;
      border-radius: 10px;
      -webkit-border-radius: 10px;
@@ -40,7 +39,6 @@
 a{
     text-decoration: none;
 }
-/** meal details */
  #meal-details{
      margin: 0 auto;
      text-align: left;
